@@ -12,3 +12,8 @@ Optimize waste collection routes for efficiency and reduced carbon emissions.
 Earn rewards and incentives for responsible waste disposal and recycling habits.
 ### Data Analytics:
 Access detailed reports and analytics on waste generation and collection patterns.
+
+## Installation
+### Prerequisites
+Python 3.x
+Flask
