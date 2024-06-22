@@ -18,7 +18,14 @@ Access detailed reports and analytics on waste generation and collection pattern
 Python 3.x 
 Flask
 
+
+
 ## Clone Repository
 ```bash
 git clone https://github.com/O-keita/GreenBin.git
+```
+## Install Dependancies
+
+```bash
+pip install -r requirements.txt
 ```
