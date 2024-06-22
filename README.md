@@ -29,3 +29,8 @@ git clone https://github.com/O-keita/GreenBin.git
 ```bash
 pip install -r requirements.txt
 ```
+
+## Run The App
+```bash
+python run.py
+```
