@@ -17,3 +17,7 @@ Access detailed reports and analytics on waste generation and collection pattern
 ### Prerequisites
 Python 3.x 
 Flask
+
+## Clone Repository
+```bash
+git clone ```
