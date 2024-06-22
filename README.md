@@ -20,4 +20,5 @@ Flask
 
 ## Clone Repository
 ```bash
-git clone ```
+git clone https://github.com/O-keita/GreenBin.git
+```
