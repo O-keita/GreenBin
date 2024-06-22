@@ -15,5 +15,5 @@ Access detailed reports and analytics on waste generation and collection pattern
 
 ## Installation
 ### Prerequisites
-Python 3.x
+Python 3.x 
 Flask
