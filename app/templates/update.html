@@ -1,0 +1,12 @@
+{% extends "layout.html" %}{% block content %}
+
+<h1>Update</h1>
+
+<div>
+  <form action="" method="POST">
+    {{ form.csrf_token }} {{ form.hidden_tag() }} {{ form.date.label }}
+    {{form.date}} {{form.type.label}} {{form.type}} {{form.submit}}
+  </form>
+</div>
+
+{% endblock %}

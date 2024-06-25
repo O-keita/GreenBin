@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if title %} GreenBin - {{ title }} {% else %} GreenBin {% endif %}
+    </title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='logo2.png') }}"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        {% if current_user.is_authenticated %}
+        <li><a href="{{url_for('schedule')}}">Schedule</a></li>
+        <li>
+          <a href="{{url_for('manage', schedule_id=current_user.id)}}"
+            >Manage</a
+          >
+        </li>
+        <li>
+          <a href="{{url_for('user_dashboard')}}">User Dashboard</a>
+        </li>
+        <li><a href="{{url_for('logout')}}">Logout</a></li>
+        {% else %}
+        <li><a href="{{url_for('login')}}">Login</a></li>
+        <li><a href="{{url_for('register')}}">Register</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>

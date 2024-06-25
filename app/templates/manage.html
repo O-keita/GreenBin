@@ -1,0 +1,16 @@
+{% extends "layout.html" %}{% block content %}
+<div>
+  <h1>Manage Schedule</h1>
+  <p>{{ schedules.date }} - {{ schedules.type }}</p>
+  <a href="{{ url_for('update', schedule_id=schedules.id)}}"
+    ><button>Update</button></a
+  >
+  <a href="{{url_for('complete', schedule_id=schedules.id)}}"
+    ><button>Mark Collected</button></a
+  >
+  <a href="{{url_for('delete', schedule_id=schedules.id)}}"
+    ><button>Delete</button></a
+  >
+</div>
+
+{% endblock %}

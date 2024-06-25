@@ -1,0 +1,13 @@
+{% extends 'layout.html' %} {% block content %}
+
+<h1>User Dashboard</h1>
+
+{% for schedule in schedules %}
+
+<p>{{ schedule.date }} - {{ schedule.type }}</p>
+
+<a href="{{ url_for('manage', schedule_id=schedule.id) }}"
+  ><button>manage</button></a
+>
+
+{% endfor %} {% endblock %}
